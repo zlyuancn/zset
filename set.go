@@ -63,3 +63,7 @@ func (m *Set) Traverse() (StartTraverseFunc, CancelFunc) {
             stop = true
         }
 }
+
+func (m *Set) RawData() map[interface{}]struct{} {
+    return m.m
+}
